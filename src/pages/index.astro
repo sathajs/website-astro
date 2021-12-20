@@ -3,12 +3,14 @@ import FooterLink from '~/lib/FooterLink.svelte';
 import Sidebar from '~/lib/Sidebar.svelte';
 import SocialLinks from '~/lib/SocialLinks.svelte';
 import Instructions from '~/lib/Instructions.svelte';
+
+console.log('Astro on');
 ---
 
 <html lang="en">
 
 <head>
-	 <meta charset="utf-8" />
+  <meta charset="utf-8" />
     <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Satha</title>
@@ -21,6 +23,7 @@ import Instructions from '~/lib/Instructions.svelte';
       property="og:description"
       content="An easy to use localStorage wrapper inspired by state management systems."
     />
+    <link rel="stylesheet" type="text/css" href={Astro.resolve('../styles/base.css')} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,13 +34,13 @@ import Instructions from '~/lib/Instructions.svelte';
 
 <body>
 <main>
-	 <header>
+  <header>
     <a href="#">
       <h1>Satha</h1>
     </a>
   </header>
 
-	 <p class="description">
+  <p class="description">
     An easy to use localStorage wrapper inspired by state management systems.
   </p>
   <p class="description">Satha [<i>साठा</i> ] is a Marathi word for "Storage" or "to store"</p>
@@ -58,42 +61,6 @@ import Instructions from '~/lib/Instructions.svelte';
 </html>
 
 <style lang="scss">
-  :global(*) {
-    box-sizing: border-box;
-  }
-  :global(body) {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    font-family: 'Mukta', sans-serif;
-    font-size: 1.2rem;
-    color: #1e212e;
-    fill: #445bbb;
-  }
-
-  :global(p) {
-    font-size: 1.35rem;
-    margin-top: 0;
-    margin-bottom: 5px;
-    color: inherit;
-  }
-
-  :global(h1) {
-    margin-top: 0;
-    font-size: 3rem;
-    margin-bottom: 0;
-    color: inherit;
-  }
-
-  :global(h2) {
-    margin: 0;
-    color: inherit;
-  }
-
-  :global(svg) {
-    fill: inherit;
-  }
-
   header {
     a {
       color: inherit;

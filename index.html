@@ -1,0 +1,341 @@
+<!DOCTYPE html><html lang="en" class="astro-LIKU3TLM"><head>
+  <meta charset="utf-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satha</title>
+    <meta name="description" content="An easy to use localStorage wrapper">
+    <meta property="og:title" content="Satha">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://satha.netlify.app/">
+    <meta property="og:image" content="https://satha.netlify.app/cover-og.jpg">
+    <meta property="og:description" content="A tiny, reactive, easy to use, wrapper for localStorage.">
+    <link rel="stylesheet" type="text/css" href="assets/index.1fc2f267.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;700&amp;display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+<main class="astro-LIKU3TLM">
+  <header class="astro-LIKU3TLM">
+    <a href="#" class="astro-LIKU3TLM">
+      <h1 class="astro-LIKU3TLM">Satha</h1>
+    </a>
+  </header>
+
+  <p class="description astro-LIKU3TLM">
+   A tiny, reactive, easy to use, wrapper for localStorage.
+  </p>
+
+  <div lang="ts" class="svelte-1cjn4av"><a href="https://github.com/sathajs/satha" target="_blank" rel="noopener noreferrer" aria-label="github" class="svelte-1mhgqni"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+
+  <section class="astro-LIKU3TLM">
+    <br class="astro-LIKU3TLM">
+    <div class="instructions"><div id="getting-started" class="svelte-1bwiq7q"><a href="#getting-started" aria-label="getting-started" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <h2>Getting started</h2>
+</div>
+  <article class="svelte-1ivyciq"><div id="install" class="svelte-1bwiq7q"><a href="#install" aria-label="install" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Install</b></p>
+</div>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token comment">// npm</span>
+npm i @satha<span class="token operator">/</span>core
+
+<span class="token comment">// pnpm</span>
+pnpm add @satha<span class="token operator">/</span>core<!-- HTML_TAG_END -->
+</div></article>
+  <article class="svelte-1ivyciq"><div id="create-store" class="svelte-1bwiq7q"><a href="#create-store" aria-label="create-store" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Create a store</b></p>
+</div>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> numberStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+  <article class="svelte-1ivyciq"><div id="use-store" class="svelte-1bwiq7q"><a href="#use-store" aria-label="use-store" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Use store</b></p>
+</div>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token comment">// get value</span>
+<span class="token keyword">const</span> number <span class="token operator">=</span> numberSave<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// set value</span>
+numberSave<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <hr>
+
+  <div id="docs" class="svelte-1bwiq7q"><a href="#docs" aria-label="docs" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <h2>Docs</h2>
+</div>
+
+  <article class="svelte-1ivyciq"><div id="create-and-use-store" class="svelte-1bwiq7q"><a href="#create-and-use-store" aria-label="create-and-use-store" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Create and use store</b></p>
+</div>
+    <p class="svelte-1ivyciq">create a store which stores a numeric value</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> numberStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// get value</span>
+<span class="token keyword">const</span> number <span class="token operator">=</span> numberSave<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+
+<span class="token comment">// set value</span>
+numberSave<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="subscribe" class="svelte-1bwiq7q"><a href="#subscribe" aria-label="subscribe" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Subscribe</b></p>
+</div>
+    <p class="svelte-1ivyciq">Create dynamic stores using Subscribe/Unsubscribe methods. Subscription is global and will
+      work througout the page.
+    </p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token operator">...</span>
+<span class="token keyword">const</span> numberSave <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// initial value</span>
+<span class="token keyword">let</span> numberValue <span class="token operator">=</span> numberSave<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// subscribe</span>
+<span class="token keyword">const</span> subscribe <span class="token operator">=</span> numberSave<span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// update value</span>
+  numberValue <span class="token operator">=</span> state<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// action to set data: can be used as onClick event</span>
+<span class="token keyword">const</span> <span class="token function-variable function">handleSetData</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// subscribe callback will be triggered after this action</span>
+  numberSave<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// optional: unsubscribe on unmount</span>
+<span class="token comment">// numberSave.unsubscribe(subscribe)</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="multi-value-store" class="svelte-1bwiq7q"><a href="#multi-value-store" aria-label="multi-value-store" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Multi value store</b></p>
+</div>
+    <p class="svelte-1ivyciq">create an user details store packed in object</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token operator">...</span>
+<span class="token comment">// user info</span>
+<span class="token keyword">const</span> userInfoStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'userInfo'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  name<span class="token operator">:</span> <span class="token string">'S. Dogg'</span><span class="token punctuation">,</span>
+  age<span class="token operator">:</span> <span class="token number">40</span><span class="token punctuation">,</span>
+  birthPalce<span class="token operator">:</span> <span class="token string">'LA'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// get value</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> name <span class="token punctuation">}</span> <span class="token operator">=</span> userInfoStore<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// log value</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// change age</span>
+userInfoStore<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token parameter">state</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  state<span class="token punctuation">.</span>age <span class="token operator">=</span> <span class="token number">50</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> state<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token comment">// get value</span>
+<span class="token keyword">const</span> <span class="token punctuation">{</span> age <span class="token punctuation">}</span> <span class="token operator">=</span> userInfoStore<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// log value</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="reset-value" class="svelte-1bwiq7q"><a href="#reset-value" aria-label="reset-value" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Reset value</b></p>
+</div>
+    <p class="svelte-1ivyciq">Reset value to initial state</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token operator">...</span>
+numberSave<span class="token punctuation">.</span><span class="token function">reset</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="session-storage" class="svelte-1bwiq7q"><a href="#session-storage" aria-label="session-storage" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">sessionStorage</b></p>
+</div>
+    <p class="svelte-1ivyciq">Create session storage (sessionStorage)</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token operator">...</span>
+<span class="token keyword">const</span> numberSave <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  storageType<span class="token operator">:</span> <span class="token string">'session'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="new-local-storage" class="svelte-1bwiq7q"><a href="#new-local-storage" aria-label="new-local-storage" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">New storage</b></p>
+</div>
+    <p class="svelte-1ivyciq">by default all stores are grouped under a single localStorage array. The values can be stored
+      in a diffrent localStorage array by specifying 'storageName'
+    </p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token operator">...</span>
+<span class="token keyword">const</span> numberSave <span class="token operator">=</span> <span class="token function">useStorage</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  storageName<span class="token operator">:</span> <span class="token string">'alt-storage'</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="change-default-storagename" class="svelte-1bwiq7q"><a href="#change-default-storagename" aria-label="change-default-storagename" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Default storage name</b></p>
+</div>
+    <p class="svelte-1ivyciq">by default all stores are grouped under a single localStorage array. You can customize the
+      name of this default storage entry by calling 'setDefaultStorageName' before initializing any
+      stores.
+    </p>
+    <p class="svelte-1ivyciq">[It's useful If you are using sub links e.g. github pages to avoid the possibility of local
+      storage name conflict.]
+    </p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token keyword">import</span> <span class="token punctuation">{</span>
+  setDefaultStorageName<span class="token punctuation">,</span>
+<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+
+<span class="token function">setDefaultStorageName</span><span class="token punctuation">(</span><span class="token string">'alt-store'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="typescript" class="svelte-1bwiq7q"><a href="#typescript" aria-label="typescript" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">Typescript</b></p>
+</div>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> type <span class="token punctuation">{</span> ICreateStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> numberStore<span class="token operator">:</span> ICreateStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">// get value</span>
+<span class="token keyword">const</span> number <span class="token operator">=</span> numberSave<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span>
+
+<span class="token comment">// set value</span>
+numberSave<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token operator">:</span> number</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<!-- HTML_TAG_END -->
+</div></article>
+
+  <article class="svelte-1ivyciq"><div id="react-hooks" class="svelte-1bwiq7q"><a href="#react-hooks" aria-label="react-hooks" class="svelte-1bwiq7q"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"><path d="M13.723 18.654l-3.61 3.609c-2.316 2.315-6.063 2.315-8.378 0-1.12-1.118-1.735-2.606-1.735-4.188 0-1.582.615-3.07 1.734-4.189l4.866-4.865c2.355-2.355 6.114-2.262 8.377 0 .453.453.81.973 1.089 1.527l-1.593 1.592c-.18-.613-.5-1.189-.964-1.652-1.448-1.448-3.93-1.51-5.439-.001l-.001.002-4.867 4.865c-1.5 1.499-1.5 3.941 0 5.44 1.517 1.517 3.958 1.488 5.442 0l2.425-2.424c.993.284 1.791.335 2.654.284zm.161-16.918l-3.574 3.576c.847-.05 1.655 0 2.653.283l2.393-2.389c1.498-1.502 3.94-1.5 5.44-.001 1.517 1.518 1.486 3.959 0 5.442l-4.831 4.831-.003.002c-1.438 1.437-3.886 1.552-5.439-.002-.473-.474-.785-1.042-.956-1.643l-.084.068-1.517 1.515c.28.556.635 1.075 1.088 1.528 2.245 2.245 6.004 2.374 8.378 0l4.832-4.831c2.314-2.316 2.316-6.062-.001-8.377-2.317-2.321-6.067-2.313-8.379-.002z"></path></svg></a>
+  <p class="svelte-1ivyciq"><b class="svelte-1ivyciq">React hooks</b></p>
+</div>
+    <p class="svelte-1ivyciq">an auto-subscribed 'useStore' react hook is available as a separate library</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token comment">// npm</span>
+npm i @satha<span class="token operator">/</span>react
+
+<span class="token comment">// pnpm</span>
+pnpm add @satha<span class="token operator">/</span>react<!-- HTML_TAG_END -->
+</div>
+    <br>
+    <p class="svelte-1ivyciq">Javascript version</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/react'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> numberStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numValue <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span>numberStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">onDecrement</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    numberStore<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">onIncrement</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    numberStore<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"App"</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Test<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>LocalStorage<span class="token operator">:</span> <span class="token punctuation">{</span>numValue<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>onDecrement<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">-</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>onIncrement<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">+</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+<!-- HTML_TAG_END -->
+</div>
+    <br>
+    <p class="svelte-1ivyciq">Typescript version</p>
+    <div class="code-box svelte-uv6jpt"><!-- HTML_TAG_START -->
+<span class="token keyword">import</span> React <span class="token keyword">from</span> <span class="token string">'react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> createStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> useStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/react'</span><span class="token punctuation">;</span>
+<span class="token keyword">import</span> type <span class="token punctuation">{</span> ICreateStore <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@satha/core'</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> numberStore<span class="token operator">:</span> ICreateStore <span class="token operator">=</span> <span class="token function">createStore</span><span class="token punctuation">(</span><span class="token string">'number-save'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numValue <span class="token operator">=</span> <span class="token function">useStore</span><span class="token punctuation">(</span>numberStore<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">onDecrement</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    numberStore<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token operator">:</span> number</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> <span class="token function-variable function">onIncrement</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    numberStore<span class="token punctuation">.</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">state<span class="token operator">:</span> number</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> state <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"App"</span><span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>h1<span class="token operator">&gt;</span>Test<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">&gt;</span>LocalStorage<span class="token operator">:</span> <span class="token punctuation">{</span>numValue<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+      <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>onDecrement<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">-</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span> <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>onIncrement<span class="token punctuation">}</span><span class="token operator">&gt;</span><span class="token operator">+</span><span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> App<span class="token punctuation">;</span>
+<!-- HTML_TAG_END -->
+</div></article>
+</div>
+  </section>
+
+  <div lang="ts" class="svelte-1cjn4av"><a href="https://github.com/sathajs/satha" target="_blank" rel="noopener noreferrer" aria-label="github" class="svelte-1mhgqni"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
+</a>
+</div>
+  <footer class="svelte-ntq0md"><ul class="svelte-ntq0md"><li class="svelte-ntq0md"><a href="https://github.com/sathajs/satha/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer" aria-label="changelog" class="svelte-ntq0md">changelog
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="svelte-ntq0md"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>
+      </li><li class="svelte-ntq0md"><a href="https://www.npmjs.com/package/@satha/core" target="_blank" rel="noopener noreferrer" aria-label="npm" class="svelte-ntq0md">npm
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="svelte-ntq0md"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>
+      </li><li class="svelte-ntq0md"><a href="https://github.com/sathajs/website-astro" target="_blank" rel="noopener noreferrer" aria-label="design" class="svelte-ntq0md">design
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" class="svelte-ntq0md"><path d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a>
+      </li></ul>
+</footer>
+</main>
+<nav class="svelte-1hzddbo"><ul class="svelte-1hzddbo"><li class="svelte-1hzddbo main"><a href="#top" class="svelte-1hzddbo">Top</a>
+      </li><li class="svelte-1hzddbo main"><a href="#getting-started" class="svelte-1hzddbo">Getting started</a>
+      </li><li class="svelte-1hzddbo"><a href="#install" class="svelte-1hzddbo">Install</a>
+      </li><li class="svelte-1hzddbo"><a href="#create-store" class="svelte-1hzddbo">Create a store</a>
+      </li><li class="svelte-1hzddbo"><a href="#use-store" class="svelte-1hzddbo">Use store</a>
+      </li><li class="svelte-1hzddbo main"><a href="#recipes" class="svelte-1hzddbo">Recipes</a>
+      </li><li class="svelte-1hzddbo"><a href="#create-and-use-store" class="svelte-1hzddbo">Create and use store</a>
+      </li><li class="svelte-1hzddbo"><a href="#subscribe" class="svelte-1hzddbo">Subscribe</a>
+      </li><li class="svelte-1hzddbo"><a href="#multi-value-store" class="svelte-1hzddbo">Multi value store</a>
+      </li><li class="svelte-1hzddbo"><a href="#reset-value" class="svelte-1hzddbo">Reset value</a>
+      </li><li class="svelte-1hzddbo"><a href="#session-storage" class="svelte-1hzddbo">sessionStorage</a>
+      </li><li class="svelte-1hzddbo"><a href="#new-local-storage" class="svelte-1hzddbo">New storage</a>
+      </li><li class="svelte-1hzddbo"><a href="#change-default-storagename" class="svelte-1hzddbo">Default storage name</a>
+      </li><li class="svelte-1hzddbo"><a href="#typescript" class="svelte-1hzddbo">Typescript</a>
+      </li><li class="svelte-1hzddbo"><a href="#react-hooks" class="svelte-1hzddbo">React hooks</a>
+      </li></ul>
+</nav>
+
+</body></html>
